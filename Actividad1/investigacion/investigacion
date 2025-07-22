@@ -1,0 +1,22 @@
+### Arquitectura de computadores  
+
+## Objetivo:  
+Comprender la estructura básica de un computador digital moderno a través del uso del simulador de CPU.
+
+## Actividades de Investigación:  
+Durante esta actividad, exploré los siguientes conceptos.  
+
+¿Qué es un computador digital moderno?  
+Componentes del computador según la arquitectura de Von Neumann  
+Ciclo de instrucción: fetch → decode → execute  
+Visualización del flujo de datos en el emulador Hack  
+
+## ¿Qué es un computador digital moderno?  
+Un computador digital moderno es una máquina electrónica que procesa datos de manera binaria (1s y 0s). Está compuesto por diversos componentes que trabajan en conjunto para recibir, procesar, almacenar y producir información.  
+
+## ¿Cuáles son sus partes?  
+CPU: ejecuta instrucciones, realiza cálculos y controla el flujo del programa.
+Memoria (RAM y ROM): almacena datos temporales y permanentes.
+Registros internos (A y D): facilitan el acceso rápido a datos para operaciones.
+Contador de programa (PC): lleva la cuenta de la instrucción actual a ejecutar.
+Sistema de entrada/salida: permite la interacción con el entorno (como teclado o pantalla).

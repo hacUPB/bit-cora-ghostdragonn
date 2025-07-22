@@ -1,13 +1,13 @@
-## Actividad 4: Escritura en memoria usando lenguaje ensamblador 
+# Actividad 4: Escritura en memoria usando lenguaje ensamblador 
 
-### Objetivo
+## Objetivo
 Aplicar el conocimiento del lenguaje ensamblador para escribir un programa que almacene un valor específico en una dirección de memoria RAM determinada.
 
-### Desarrollo del Reto  
-### Enunciado:  
+## Desarrollo del Reto  
+## Enunciado:  
 Escribir un programa en lenguaje ensamblador Hack que guarde el número 100 en la posición 32 de la RAM.
 
-### Programa en lenguaje ensamblador:
+## Programa en lenguaje ensamblador:
 
 ```
 @100 = Cargar el valor 100 en el registro A
