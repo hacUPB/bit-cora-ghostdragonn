@@ -1,8 +1,8 @@
-//Actividad 5
-//1. Carga en D el valor 1978.
+// Actividad 5
+// 1. Carga en D el valor 1978.
 @1987
 D=A
-//2. Guarda en la posición 100 de la RAM el número 69.
+// 2. Guarda en la posición 100 de la RAM el número 69.
 
 @69 
 D=A 
