@@ -2,7 +2,7 @@
 
 //1. Carga en D el valor 1978.
 
-@1987
+@198
 D=A
 
 //2. Guarda en la posición 100 de la RAM el número 69.
@@ -174,7 +174,6 @@ M=-1
 //RTA:
 
 @R1
-A=M
 D=M
 @R4
 M=D
