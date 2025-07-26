@@ -1,0 +1,52 @@
+# Arquitectura del computador
+
+## Actividad 1: PARTES DE UN COMPUTADOR DIGITAL MODERNO
+
+### ¿Qué es un computador digital moderno?
+Un computador digital moderno es una máquina electrónica que procesa datos de manera binaria (1s y 0s). Está compuesto por diversos componentes que trabajan en conjunto para recibir, procesar, almacenar y producir información.
+
+### ¿Cuales son sus partes?
+CPU: ejecuta instrucciones, realiza cálculos y controla el flujo del programa.
+Memoria (RAM y ROM): almacena datos temporales y permanentes.
+Registros internos (A y D): facilitan el acceso rápido a datos para operaciones.
+Contador de programa (PC): lleva la cuenta de la instrucción actual a ejecutar.
+Sistema de entrada/salida: permite la interacción con el entorno (como teclado o pantalla).  
+
+
+## Actividad 2: LENGUAJE ENSAMBLADOR Y LENGUAJE DE MAQUINA.  
+
+### Objetivo  
+Comprender qué es un programa, cómo se representa internamente y cuál es la diferencia entre lenguaje ensamblador y lenguaje de máquina.
+
+### ¿Qué es un programa?  
+Un programa es una secuencia de instrucciones que una computadora puede interpretar y ejecutar para realizar tareas específicas. Está diseñado para seguir una lógica y controlar el flujo de datos.  
+
+### ¿Qué es un lenguaje ensamblador?  
+Es un lenguaje de bajo nivel que usa mnemónicos simbólicos para representar instrucciones de máquina. Es más legible para los humanos y se traduce directamente a lenguaje de máquina.  
+
+### ¿Qué es lenguaje de máquina?  
+Es la representación binaria directa (en 0 y 1) de las instrucciones que entiende el hardware de forma nativa. Es la forma más básica de programación.  
+
+## Actividad 3: Registros PC, D y A.  
+
+### Objetivo:  
+Comprender el funcionamiento y uso de los registros PC, D y A dentro del ciclo de instrucción de un computador.  
+
+### ¿Qué son PC, D y A?  
+
+### PC:  
+Es un registro que guarda la dirección de la siguiente instrucción a ejecutar. Se actualiza automáticamente después de cada instrucción, salvo que haya un salto.  
+
+### D:  
+Es un registro de propósito general utilizado para almacenar datos temporales o resultados de operaciones.  
+
+### A:  
+Tiene doble propósito. Puede almacenar una dirección de memoria (acceso indirecto) o un valor constante. También se usa para direccionar instrucciones tipo A y para acceder a memoria RAM o ROM.  
+
+### ¿Para qué los usa la CPU?
+
+El PC controla el flujo de ejecución del programa.
+
+El A permite especificar dónde se va a leer o escribir en memoria, o con qué valor se va a operar.
+
+El D guarda resultados temporales, por ejemplo, al hacer una suma o copiar valores.
