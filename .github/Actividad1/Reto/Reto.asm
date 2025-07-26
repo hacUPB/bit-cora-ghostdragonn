@@ -2,7 +2,7 @@
 
 //1. Carga en D el valor 1978.
 
-@198
+@1978
 D=A
 
 //2. Guarda en la posición 100 de la RAM el número 69.
@@ -30,6 +30,8 @@ M=M-D
 
 //5. Suma el contenido de la posición 0 de la RAM, el contenido de la posición 1 de la RAM y con la constante 69. Guarda el resultado en la posición 2 de la RAM.
 
+// Para la prueba, añadi manualmente los valores a la posicion 1 y 0.
+
 @0 
 D=M 
 @1
@@ -46,6 +48,8 @@ D;JEQ
 
 //7. Si el valor almacenado en la posición 100 de la RAM es menor a 100 salta a la posición 20 de la ROM.
 
+// Para la prueba, añadi manualmente el valor de 30 en el emulador.
+
 @100
 D=M
 @100
@@ -55,13 +59,6 @@ D;JLT
 
 //8. Considera el siguiente programa:
 
-@var1
-D = M
-@var2
-D = D + M
-@var3
-M = D
-    
 //¿Qué hace este programa?
 
 //Carga el contenido de la variable var1 a D, le suma el contenido de var2 y guarda el resultado en la variable var3.
@@ -98,9 +95,12 @@ M=M+1
         
 //10. Las posiciones de memoria RAM de 0 a 15 tienen los nombres simbólico `R0` a `R15`. Escribe un programa en lenguaje ensamblador que guarde en `R1` la operación `2 * R0`.
 
+// Para la prueba, añadi manualmente los valores a la posicion 0.
+
 @R0
 D=M
-D=D+D
+@R0
+D=D+M
 @R1
 M=D
 
@@ -136,32 +136,38 @@ Son etiquetas que representan puntos de salto en la ROM, pero especificamente:
 
 //12. Implemente en ensamblador:
 
+// Para la prueba, añadi manualmente los valores.
+
 RTA:
 
-@R1      
-D=M     
+@R1
+D=M
 @R2
-D=D+M    
+D=D+M
 @69
-D=D+A   
+D=D+A
 @R4
-M=D      
+M=D
 
 ​
 //13. Implementa en ensamblador:
 
-//RTA: 
+// Para la prueba, añadi manualmente los valores.
 
+//RTA: 
 @R0
-D=M        
+D=M
 @ELSE
-D;JLT     
+D;JLT
 @R1
 M=1
 @CONT
 0;JMP
+
+(ELSE)
 @R1
 M=-1
+
 (CONT)
 (LOOP)
 @LOOP
@@ -169,7 +175,9 @@ M=-1
 
 
 ​
-//Implementa en ensamblador:
+14 //Implementa en ensamblador:
+
+// Para la prueba, añadi manualmente los valores.
 
 //RTA:
 
@@ -179,6 +187,8 @@ D=M
 M=D
 
 //15. Implementa en ensamblador el siguiente problema. En la posición R0 está almacenada la dirección inicial de una región de memoria. En la posición R1 está almacenado el tamaño de la región de memoria. Almacena un -1 en esa región de memoria.
+
+// Para probarlo añadi manualmente los valores en la RAM
 
 @R0
 D=M
@@ -209,11 +219,12 @@ M=M-1
 
 (END)
 
+
 //16. Implementa en lenguaje ensamblador el siguiente programa:
     
 //¿Qué hace este programa?
 
-Crea un arreglo de 10 enteros llamado arr que inicializa una variable sum en 0 y suma los 10 elementos del arreglo arr y guarda el resultado en sum.
+//Crea un arreglo de 10 enteros llamado arr que inicializa una variable sum en 0 y suma los 10 elementos del arreglo arr y guarda el resultado en sum.
 
 //¿Cuál es la dirección base de arr en la memoria RAM?
 
@@ -228,6 +239,9 @@ Crea un arreglo de 10 enteros llamado arr que inicializa una variable sum en 0 y
 //j se ubica en RAM[27], porque es la siguiente variable simbólica declarada después de sum.	
 
 //17. Implementa en lenguaje ensamblador:
+
+// Para la prueba, añadi manualmente los valores.
+
 //RTA:
 @7
 D=D-A
@@ -668,11 +682,9 @@ D=0
 
 //¿Qué hace este programa?
 
-//-Calcula una dirección base: 16384 + 16 = 16400
-//-Realiza otras operaciones con valores como 24576 y 19
-//-Termina almacenando el valor 16396 en RAM[16]
-//-Luego hace un salto incondicional a una dirección anterior (@4 → 0;JMP), generando un ciclo infinito
-
+//Este programa borra la pantalla.
+//Va recorriendo poco a poco cada espacio de memoria donde se guarda lo que se muestra en la pantalla, y en cada uno pone un 0, lo que hace que todo desaparezca.
+//Ese proceso lo repite muchas veces, como si limpiara la pantalla parte por parte hasta dejarla en blanco.
 //20. Implementa un programa en lenguaje ensamblador que dibuje el bitmap que diseñaste en la pantalla solo si se presiona la tecla “d”.
 
 @KBD        // Dirección del teclado
